@@ -1,4 +1,4 @@
-package org.example.teahouse.core.error;
+package org.dsgimhana.error;
 
 public class ResourceNotFoundException extends RuntimeException {
 

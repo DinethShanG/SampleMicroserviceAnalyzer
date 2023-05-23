@@ -1,9 +1,10 @@
-package org.example.teahouse.core.actuator.health;
+package org.dsgimhana.actuator.health;
 
-import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.actuate.health.Health;
 import org.springframework.boot.actuate.health.HealthIndicator;
+
+import java.util.Optional;
 
 @RequiredArgsConstructor
 public class HealthClientAdapter implements HealthIndicator {
