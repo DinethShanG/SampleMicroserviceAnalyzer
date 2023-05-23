@@ -1,4 +1,4 @@
-package org.example.teahouse.core.actuator.config;
+package org.dsgimhana.actuator.config;
 
 import feign.micrometer.FeignContext;
 import io.micrometer.common.KeyValue;
@@ -6,8 +6,7 @@ import io.micrometer.observation.Observation;
 import io.micrometer.observation.ObservationFilter;
 import io.micrometer.observation.ObservationPredicate;
 import net.ttddyy.observation.tracing.DataSourceBaseContext;
-import org.example.teahouse.core.actuator.info.RuntimeInfoContributor;
-
+import org.dsgimhana.actuator.info.RuntimeInfoContributor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.actuate.info.InfoContributor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;

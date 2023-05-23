@@ -1,19 +1,20 @@
-package org.example.teahouse.core.actuator.info;
-
-import static java.time.Duration.between;
+package org.dsgimhana.actuator.info;
 
 import com.google.common.collect.ImmutableMap;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.actuate.info.Info.Builder;
+import org.springframework.boot.actuate.info.InfoContributor;
+import org.springframework.core.env.Environment;
+
 import java.lang.management.GarbageCollectorMXBean;
 import java.lang.management.ManagementFactory;
 import java.net.InetAddress;
 import java.time.Instant;
 import java.util.List;
 import java.util.Map;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.actuate.info.Info.Builder;
-import org.springframework.boot.actuate.info.InfoContributor;
-import org.springframework.core.env.Environment;
+
+import static java.time.Duration.between;
 
 @Slf4j
 @RequiredArgsConstructor
